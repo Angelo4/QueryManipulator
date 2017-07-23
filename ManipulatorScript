@@ -1,0 +1,15 @@
+function transformQuery(rawPaste) {
+    //console.log(rawPaste);
+    var a = rawPaste;
+
+    var wordSplit = a.split("\n");
+    //console.log(a)
+
+    for (i =0; i < wordSplit.length; i++){
+        console.log(i + 1 + ": " + wordSplit[i])
+    }
+};
+
+transformQuery("Col A Col B Col C\n" +
+    "Value A 1234 2017/06/04\n" +
+    "Value B 1894.56 2012/01/03");
