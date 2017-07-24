@@ -4,29 +4,24 @@
     <meta charset="UTF-8">
     <title>Manipulator Page</title>
     <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
     <script src="ManipulatorScript.js"></script>
 </head>
-<header>
-    <ul>
-        <li><a class="active" href="Landing.html">Home</a></li>
-    </ul>
-</header>
 <body>
 <div>
     <h1>
         Query Manipulator
     </h1>
 </div>
-<div>
+<div class="questions">
     <div>
         <p>
             Copy and Paste your Query Result with Headers here:
         </p>
-        <textarea name="QueryResult">
-        </textarea>
+        <textarea id="QueryPaste" name="QueryResult"></textarea>
     </div>
     <div>
-        <button type="button">Transform Query</button>
+        <button type="button" onclick="executeTranform()">Transform Query</button>
     </div>
 </div>
 </body>
