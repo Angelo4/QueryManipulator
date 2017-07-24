@@ -31,6 +31,10 @@ function transformQuery(rawPaste) {
         }
     }
     console.log(statement)
+    return statement;
 };
 
-
+function executeTranform() {
+    var contents = document.getElementById('QueryPaste').value;
+    document.getElementById('QueryPaste').value = transformQuery(contents);
+}
