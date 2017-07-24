@@ -33,7 +33,4 @@ function transformQuery(rawPaste) {
     console.log(statement)
 };
 
-transformQuery("Col A\tCol B\tCol C\n" +
-    "Value A\t1234\t2017/06/04\n" +
-    "Value B\t1894.56\t2012/01/03");
 
